@@ -13,7 +13,7 @@ public class ConverterTest {
   public void testConverter() {
     Converter<String, Integer> converter = (conv) -> Integer.valueOf(conv);
     Integer converted = converter.convert("123");
-    System.out.println(converted);
+    LOG.info(converted.toString());
     Assert.assertTrue(converted instanceof Integer);
     LOG.info(String.valueOf(converted.getClass()));
   }

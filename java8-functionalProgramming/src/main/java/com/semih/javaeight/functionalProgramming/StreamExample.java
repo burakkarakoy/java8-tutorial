@@ -21,7 +21,7 @@ public class StreamExample {
                                     .map(a -> "-" + a + "-")
                                     .sorted((s1, s2) -> s2.compareTo(s1))
                                     .collect(Collectors.toList());
-    System.out.println(stream);
-    System.out.println(listStream);
+    LOG.info(stream);
+    LOG.info(listStream.toString());
   }
 }
